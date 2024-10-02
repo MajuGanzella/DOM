@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Aplicando DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+       body{
+        background-color: rgb(196, 149, 196);
+       }
+        .tabelaon {
+            background: rgb(232, 131, 232);
+           
+        }
+        .tabela{
+            border: 2px solid purple;
+            border-radius: 2%;
+            background: white;
+            margin-left: 37%;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        td{
+            padding: 5px;
+            text-align: center;
+        }
+        
+        h1{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: purple;
+            color: white;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            var tabelar = document.querySelectorAll(".tabela tbody tr");
+            for (var i = 0; i < tabelar.length; i += 2)
+            tabelar[i].className = "tabelaon";
+
+        }
+    </script>
+</head>
+<body>
+    <h1>EXERCICIO 2</h1>
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Nota</th>
+                <th>Falta</th>
+                <th>Situação</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>Carlos</td>
+                    <td>10.00</td>
+                    <td>2</td>
+                    <td>Aprovado</td>
+                </tr>
+                <tr>
+                    <td>Juliana</td>
+                    <td>7.00</td>
+                    <td>0</td>
+                    <td>Aprovado</td>
+            
+                </tr>
+                <tr>
+                    <td>Marcos</td>
+                    <td>5.00</td>
+                    <td>4</td>
+                    <td>Exame</td>
+                </tr>
+                <tr>
+                    <td>Nadir</td>
+                    <td>4.00</td>
+                    <td>8</td>
+                    <td>Reprovado</td>
+                </tr>
+                <tr>
+                    <td>Benedito</td>
+                    <td>2.50</td>
+                    <td>10</td>
+                    <td>Reprovado</td>
+                </tr>
+                <tr>
+                    <td>Mauricio</td>
+                    <td>8.50</td>
+                    <td>0</td>
+                    <td>Aprovado</td>
+                </tr>
+                <tr>
+                    <td>Tulio</td>
+                    <td>3.00</td>
+                    <td>6</td>
+                    <td>Reprovado</td>
+                </tr>
+                <tr>
+                    <td>Oldair</td>
+                    <td>6.50</td>
+                    <td>4</td>
+                    <td>Exame</td>
+                </tr>
+                <tr>
+                    <td>Yan</td>
+                    <td>7.50</td>
+                    <td>0</td>
+                    <td>Aprovado</td>
+                </tr>
+            </tbody>
+       
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+    <input type="text" name="meuInput"><br>
+    <button id="meubotao" onclick="mostrarValor()"> Mostrar Valor</button>
+    <p id="resultado"></p>
+    <script>
+        function mostrarValor(){
+            //acessa o elemento pelo seu atributo name
+            var input = document.getElementsByName("meuInput")[0];
+            var resultado = document.getElementById("resultado");
+
+            //altera o conteúdo do elemento resultado
+            resultado.textContent = "valor do input: " + input.value;
+        }
+    </script>
+
+</body>
+</html>
